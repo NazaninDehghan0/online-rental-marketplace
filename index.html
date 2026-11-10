@@ -1,67 +1,172 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles/style.css">
-    <title>دارینو | اجاره آنلاین کالا و تجهیزات</title>
+    <link rel="stylesheet" href="src/styles/style.css?v=2">
+    <title>دارینو | بازارگاه آنلاین اجاره کالا</title>
 </head>
 <body>
 
     <header>
-        <h1>دارینو</h1>
+        <div class="logo">
+            <h1>دارینو</h1>
+            <span>بازارگاه آنلاین اجاره کالا</span>
+        </div>
+
         <nav>
-            <a href="#">صفحه اصلی</a>
-            <a href="#">دسته‌بندی کالاها</a>
-            <a href="#">نحوه کار</a>
-            <a href="#">ورود / ثبت‌نام</a>
+            <a href="index.html">صفحه اصلی</a>
+            <a href="#categories">دسته‌بندی‌ها</a>
+            <a href="#how-it-works">نحوه کار</a>
+            <a href="src/pages/analysis.html">پرونده تحلیلی</a>
+            <a href="#login">ورود / ثبت‌نام</a>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>به دارینو خوش آمدید</h2>
-            <h3>هر چیزی لازم داری، اجاره کن!</h3>
-            <p>
-                در دارینو می‌تونی کالاها و تجهیزات موردنیازت رو
-                بدون خرید دائمی و با هزینه مناسب اجاره کنی.
-            </p>
 
-            <input type="text" placeholder="دنبال چه کالایی می‌گردی؟">
-            <button>جست‌وجوی کالا</button>
-        </section>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="badge">اجاره آسان، سریع و اقتصادی</span>
 
-        <section>
-            <h2>دسته‌بندی کالاها</h2>
+                <h2>هر چیزی لازم داری، <span>اجاره کن!</span></h2>
 
-            <div>
-                <h3>تجهیزات دیجیتال و عکاسی</h3>
-                <p>دوربین، لنز، میکروفون و تجهیزات نورپردازی</p>
+                <p>
+                    دارینو راهی ساده برای دسترسی به کالاها و تجهیزات موردنیاز است؛
+                    بدون اینکه مجبور باشی برای استفاده کوتاه‌مدت، هزینه خرید کامل کالا را پرداخت کنی.
+                </p>
+
+                <div class="search-box">
+                    <input type="text" placeholder="مثلاً دوربین، دریل یا چادر کمپینگ">
+                    <button>جست‌وجوی کالا</button>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#categories" class="primary-button">مشاهده کالاها</a>
+                    <a href="src/pages/analysis.html" class="secondary-button">آشنایی با ایده دارینو</a>
+                </div>
             </div>
 
-            <div>
-                <h3>تجهیزات سفر و کمپینگ</h3>
-                <p>چادر، کیسه‌خواب و وسایل طبیعت‌گردی</p>
-            </div>
-
-            <div>
-                <h3>ابزار و تجهیزات فنی</h3>
-                <p>دریل، ابزار تعمیراتی و تجهیزات کارگاهی</p>
+            <div class="hero-card">
+                <div class="card-icon">♢</div>
+                <h3>خرید نکن، وقتی فقط به استفاده نیاز داری.</h3>
+                <p>
+                    کالا را برای مدت موردنیازت پیدا کن، انتخاب کن و اجاره کن.
+                </p>
             </div>
         </section>
 
-        <section>
-            <h2>چرا دارینو؟</h2>
-            <p>صرفه‌جویی در هزینه خرید کالا</p>
-            <p>دسترسی آسان به تجهیزات موردنیاز</p>
-            <p>امکان اجاره برای مدت دلخواه</p>
+        <section id="categories" class="categories">
+            <div class="section-title">
+                <span>دسته‌بندی‌ها</span>
+                <h2>چه چیزی می‌خواهی اجاره کنی؟</h2>
+                <p>از تجهیزات دیجیتال تا ابزار و وسایل سفر</p>
+            </div>
+
+            <div class="category-grid">
+
+                <div class="category-card">
+                    <div class="category-icon">📷</div>
+                    <h3>دیجیتال و عکاسی</h3>
+                    <p>دوربین، لنز، میکروفون و تجهیزات نورپردازی</p>
+                    <a href="#">مشاهده تجهیزات ←</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">⛺</div>
+                    <h3>سفر و کمپینگ</h3>
+                    <p>چادر، کیسه‌خواب و تجهیزات طبیعت‌گردی</p>
+                    <a href="#">مشاهده تجهیزات ←</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🔧</div>
+                    <h3>ابزار و تجهیزات فنی</h3>
+                    <p>دریل، ابزار تعمیراتی و تجهیزات کارگاهی</p>
+                    <a href="#">مشاهده تجهیزات ←</a>
+                </div>
+
+            </div>
         </section>
+
+        <section id="how-it-works" class="how-it-works">
+
+            <div class="section-title">
+                <span>نحوه کار</span>
+                <h2>اجاره در سه قدم ساده</h2>
+            </div>
+
+            <div class="steps">
+
+                <div class="step">
+                    <div class="step-number">۱</div>
+                    <h3>جست‌وجو کن</h3>
+                    <p>کالای موردنیازت را در دسته‌بندی‌ها پیدا کن.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">۲</div>
+                    <h3>انتخاب کن</h3>
+                    <p>کالا و مدت زمان اجاره را انتخاب کن.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">۳</div>
+                    <h3>اجاره کن</h3>
+                    <p>درخواست اجاره را ثبت کن و از کالا استفاده کن.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="why-darino">
+
+            <div class="section-title">
+                <span>ارزش پیشنهادی</span>
+                <h2>چرا دارینو؟</h2>
+            </div>
+
+            <div class="benefits">
+
+                <div>
+                    <h3>💰 صرفه‌جویی در هزینه</h3>
+                    <p>برای استفاده کوتاه‌مدت، لازم نیست هزینه خرید کامل کالا را پرداخت کنی.</p>
+                </div>
+
+                <div>
+                    <h3>⚡ دسترسی آسان</h3>
+                    <p>تجهیزات موردنیازت را در یک بازارگاه آنلاین جست‌وجو و مقایسه کن.</p>
+                </div>
+
+                <div>
+                    <h3>📅 انعطاف در زمان</h3>
+                    <p>کالا را متناسب با مدت استفاده موردنیازت اجاره کن.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="login" class="cta-section">
+            <h2>برای استفاده از یک کالا، لازم نیست آن را بخری.</h2>
+            <p>دارینو را امتحان کن و هوشمندانه‌تر از تجهیزات موردنیازت استفاده کن.</p>
+            <a href="#categories" class="primary-button">شروع جست‌وجو</a>
+        </section>
+
     </main>
 
     <footer>
-        <h3>دارینو</h3>
-        <p>هوشمندانه اجاره کن، به‌صرفه استفاده کن.</p>
+        <div>
+            <h3>دارینو</h3>
+            <p>هوشمندانه اجاره کن، به‌صرفه استفاده کن.</p>
+        </div>
+
+        <div>
+            <p>پروژه درس تجارت الکترونیکی</p>
+            <p>دانشگاه یزد</p>
+        </div>
+
         <p>تمام حقوق این سامانه محفوظ است.</p>
     </footer>
 
