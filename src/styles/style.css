@@ -456,5 +456,77 @@ footer p {
     .success-message h3 {
         margin-bottom: 10px;
     }
-    
+
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.rental-form {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.rental-form label {
+    font-weight: 600;
+    color: #222;
+}
+
+.rental-form input,
+.rental-form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+.rental-form input:focus,
+.rental-form select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.rental-form button {
+    margin-top: 10px;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: #2563eb;
+    color: white;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.rental-form button:hover {
+    background: #1d4ed8;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-family: inherit;
+}
+
+.success-message {
+    padding: 18px;
+    border-radius: 12px;
+    background: #ecfdf5;
+    color: #166534;
+    font-weight: 600;
+}
+
 }
