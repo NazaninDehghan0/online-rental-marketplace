@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دارینو | هر چیزی لازم داری، اجاره کن!</title>
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<!-- فونت وزیر (Vazirmatn) به‌صورت آنلاین -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="wrap nav">
+  <a href="#top" class="logo" aria-label="دارینو">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e3f3c8"/><stop offset="1" stop-color="#7fb58a"/></linearGradient><linearGradient id="lb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a7050"/><stop offset="1" stop-color="#17382a"/></linearGradient></defs>
+    <rect x="1" y="1" width="46" height="46" rx="15" fill="url(#lb)" stroke="#b9dc9b55"/>
+    <path fill="url(#lg)" fill-rule="evenodd" d="M13 11h11a14 14 0 0 1 0 26H13zM20.5 17.5v13H24a6.5 6.5 0 0 0 0-13z"/>
+    <path fill="#e3f3c8" d="M30 9c5 0 8 3 8 8-5 0-8-3-8-8z"/></svg>
+    <span>دارینو</span></a>
+  <nav class="menu"><a href="#browse">کالاها</a><a href="#how">نحوه کار</a><a href="#lend">اجاره بده</a><a href="#idea">درباره ایده</a><a href="#eval">ارزیابی</a><a href="#plan">اعتبارسنجی</a></nav>
+  <div class="sp"></div>
+  <button class="iconbtn" id="favBtn" title="علاقه‌مندی‌ها" aria-label="علاقه‌مندی‌ها">♡<span class="badge" id="favN">۰</span></button>
+  <button class="iconbtn" id="cartBtn" title="درخواست‌های اجاره" aria-label="درخواست‌های اجاره">🛒<span class="badge" id="cartN">۰</span></button>
+  <button class="btn mini" id="userBtn">ورود / ثبت‌نام</button>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap"><div class="glass herobox">
+  <div>
+    <h1>هر چیزی لازم داری،<br>اجاره کن!</h1>
+    <p>به‌جای خرید کالاهایی که فقط گاهی به آن‌ها نیاز داری، آن‌ها را از دارینو اجاره کن؛ هم هزینه کمتر، هم وسایل بی‌استفاده‌ی دیگران به کار می‌آید.</p>
+    <div class="cta"><a href="#browse" class="btn">جست‌وجوی کالا ←</a><a href="#how" class="btn ghost">دارینو چطور کار می‌کند؟</a></div>
+    <div class="audience">مناسب دانشجویان، عکاسان، مسافران و علاقه‌مندان به تجهیزات فنی</div>
+  </div>
+  <div class="stage" aria-hidden="true"><div class="card c1">📷</div><div class="card c2">⛺</div><div class="card c3">🛠️</div></div>
+</div></div></section>
+
+<section id="browse" style="padding-top:30px"><div class="wrap">
+  <h2>کالای مورد نیازت را پیدا کن</h2>
+  <p class="sub">دسته‌بندی را انتخاب کن، مشخصات را ببین و درخواست اجاره ثبت کن.</p>
+  <div class="cats" id="cats"></div>
+  <div class="tools">
+    <label class="search"><span>🔍</span><input id="q" type="text" placeholder="جست‌وجوی کالا، مثلاً دوربین، چادر، دریل…" style="margin:0"></label>
+    <select id="sort" aria-label="مرتب‌سازی"><option value="0">مرتب‌سازی پیش‌فرض</option><option value="1">ارزان‌ترین</option><option value="2">گران‌ترین</option><option value="3">بالاترین امتیاز</option></select>
+  </div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <h2>سناریوی استفاده از دارینو</h2>
+  <p class="sub">کاربر وارد سایت می‌شود، دسته‌بندی را انتخاب می‌کند، کالاها را می‌بیند و پس از بررسی مشخصات، درخواست اجاره ثبت می‌کند.</p>
+  <div class="steps">
+    <div class="glass step"><b>ورود به سایت</b><span>صفحه اصلی و دسته‌بندی‌های کالا را ببین.</span></div>
+    <div class="glass step"><b>انتخاب دسته‌بندی</b><span>دیجیتال و عکاسی، سفر و کمپینگ یا ابزار فنی.</span></div>
+    <div class="glass step"><b>مشاهده کالاها</b><span>قیمت روزانه، امتیاز، شهر و توضیحات هر کالا.</span></div>
+    <div class="glass step"><b>بررسی مشخصات</b><span>شرایط اجاره، ودیعه و ویژگی‌های فنی را بخوان.</span></div>
+    <div class="glass step"><b>ثبت درخواست اجاره</b><span>تاریخ و مدت را بنویس و درخواست را بفرست.</span></div>
+  </div>
+  <p class="note" style="margin-top:18px">در نسخه فعلی، اطلاعات کالاها آزمایشی هستند و پرداخت واقعی انجام نمی‌شود.</p>
+  <div class="split" style="margin-top:34px">
+    <div class="glass box online"><h3>خدمات آنلاین</h3><ul><li>ثبت‌نام</li><li>جست‌وجوی کالا</li><li>مشاهده مشخصات</li><li>ثبت درخواست</li><li>ارتباط کاربران</li></ul></div>
+    <div class="glass box offline"><h3>خدمات آفلاین</h3><ul><li>تحویل کالا</li><li>بررسی سلامت کالا</li><li>استفاده از کالا</li><li>بازگرداندن کالا</li></ul></div>
+  </div>
+</div></section>
+
+<section id="lend"><div class="wrap"><div class="glass box" style="padding:34px">
+  <h2>وسایل بلااستفاده‌ات را اجاره بده</h2>
+  <p class="sub">کالایت را ثبت کن تا در فهرست دارینو نمایش داده شود و از آن درآمد کسب کنی. (برای ثبت کالا باید وارد حساب شوی؛ اطلاعات در پایگاه داده ذخیره می‌شود.)</p>
+  <div class="row2"><div><label for="ln">نام کالا</label><input id="ln" type="text"></div><div><label for="lc">دسته‌بندی</label><select id="lc" style="width:100%;border-radius:14px"><option value="dig">دیجیتال و عکاسی</option><option value="trip">سفر و کمپینگ</option><option value="tool">ابزار و تجهیزات فنی</option></select></div></div>
+  <div class="row2"><div><label for="lp">قیمت اجاره روزانه (تومان)</label><input id="lp" type="number" min="10000" step="10000"></div><div><label for="lcity">شهر</label><input id="lcity" type="text"></div></div>
+  <label for="ld">توضیحات</label><textarea id="ld" placeholder="وضعیت کالا، لوازم همراه و شرایط اجاره"></textarea>
+  <div class="err" id="ler"></div><button class="btn" id="lsend">ثبت کالا برای اجاره</button>
+</div></div></section>
+
+<section id="idea"><div class="wrap">
+  <h2>معرفی ایده</h2>
+  <p class="sub">دارینو یک بازارگاه آنلاین برای اجاره کالا و تجهیزات است؛ کاربران نیازمند به کالا را به افرادی وصل می‌کند که وسایل کم‌استفاده‌شان را برای اجاره عرضه می‌کنند. هدف، کاهش هزینه خرید کالاهای موقتی و استفاده بهتر از وسایل بلااستفاده است.</p>
+  <div class="two">
+    <div class="glass box"><h3>مسئله و نیاز بازار</h3><p>بسیاری برای مدت کوتاهی به کالاهایی نیاز دارند که خریدشان گران است و در همان زمان، وسایلی در خانه یا محل کار بی‌استفاده مانده‌اند.</p><ul style="margin-top:10px"><li>هزینه بالای خرید</li><li>دشواری پیدا کردن کالای اجاره‌ای</li><li>نبود اطلاعات شفاف درباره قیمت و شرایط اجاره</li></ul></div>
+    <div class="glass box"><h3>مخاطبان اصلی</h3><p>دانشجویان، عکاسان، مسافران، علاقه‌مندان به کمپینگ و افراد نیازمند ابزار فنی.</p><h3 style="margin-top:14px">دسته‌بندی‌های اولیه</h3><ul><li>تجهیزات دیجیتال و عکاسی</li><li>وسایل سفر و کمپینگ</li><li>ابزار و تجهیزات فنی</li></ul></div>
+    <div class="glass box"><h3>ارزش پیشنهادی</h3><p><b style="color:var(--acc)">برای اجاره‌کننده:</b> دسترسی به کالای مورد نیاز با هزینه کمتر، بدون خرید دائمی.</p><p style="margin-top:10px"><b style="color:var(--acc)">برای اجاره‌دهنده:</b> کسب درآمد از وسایل کم‌استفاده.</p></div>
+  </div>
+</div></section>
+
+<section id="eval"><div class="wrap">
+  <h2>پاسخ به هشت سؤال ارزیابی ایده</h2>
+  <p class="sub">بررسی ایده دارینو بر اساس پرسش‌های استاندارد ارزیابی.</p>
+  <div id="faq"></div>
+</div></section>
+
+<section id="plan"><div class="wrap">
+  <h2>فرضیات و برنامه اعتبارسنجی</h2>
+  <div class="two" style="margin-top:20px">
+    <div class="glass box"><h3>فرض‌های اصلی</h3><ul><li>کاربران برای کاهش هزینه‌ها به اجاره کالا علاقه‌مندند.</li><li>صاحبان وسایل کم‌استفاده ممکن است از اجاره دادن آن‌ها استقبال کنند.</li></ul></div>
+    <div class="glass box"><h3>روش بررسی</h3><ul><li>مصاحبه با مخاطبان (دانشجویان، عکاسان، صاحبان تجهیزات)</li><li>بررسی بازار و رقبا</li><li>دریافت بازخورد از نسخه اولیه همین سایت</li></ul></div>
+    <div class="glass box"><h3>موانع احتمالی</h3><ul><li>اعتماد کاربران</li><li>آسیب یا مفقود شدن کالا</li><li>تأخیر در بازگشت</li><li>اختلاف بر سر شرایط اجاره</li></ul></div>
+  </div>
+</div></section>
+
+<section><div class="wrap"><div class="glass landing">
+  <h2>جمع‌بندی</h2>
+  <p>دارینو با هدف ایجاد ارتباط میان اجاره‌کنندگان و صاحبان کالا طراحی شده است. در فاز اول، مسئله، مخاطبان، ارزش پیشنهادی و ساختار اولیه سامانه مشخص شده‌اند و ادامه توسعه بر پایه بررسی نیاز واقعی بازار و بازخورد کاربران انجام می‌شود.</p>
+  <a href="#browse" class="btn">جست‌وجوی کالا ←</a>
+</div></div></section>
+</main>
+<footer><div class="wrap">دارینو، بازارگاه اجاره کالا و تجهیزات · پروژه درس تجارت الکترونیکی، فاز اول · اطلاعات کالاها آزمایشی است</div></footer>
+
+<div class="ov" id="ov"><div class="glass modal" id="modal" role="dialog" aria-modal="true"></div></div>
+<aside class="drawer" id="drawer" aria-label="درخواست‌های اجاره">
+  <div><button class="x" id="closeD" aria-label="بستن">✕</button><h3>درخواست‌های اجاره</h3></div>
+  <div class="dl" id="dl"></div>
+  <div class="promo"><input id="pc" placeholder="کد تخفیف (DARINO10)"><button class="btn ghost mini" id="pa">اعمال</button></div>
+  <div class="sum" style="flex-direction:column;align-items:stretch;gap:4px"><div class="ln"><span>جمع اجاره</span><span id="sub">۰ تومان</span></div><div class="ln"><span>تخفیف</span><span id="dis">۰ تومان</span></div><div class="ln"><span>جمع کل</span><b id="tot">۰ تومان</b></div></div>
+  <button class="btn" id="send">ثبت نهایی درخواست‌ها</button>
+  <p class="note">پرداخت واقعی انجام نمی‌شود؛ این نسخه آزمایشی است.</p>
+</aside>
+<nav class="bnav" aria-label="ناوبری"><a href="#top"><span>🏠</span>خانه</a><a href="#browse"><span>🌿</span>کالاها</a><a href="#lend"><span>➕</span>اجاره بده</a><button id="favB"><span>♡</span>علاقه‌مندی</button><button id="userB"><span>👤</span>حساب</button></nav>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
